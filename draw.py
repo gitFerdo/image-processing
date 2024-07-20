@@ -1,10 +1,11 @@
 import cv2 as cv
 import numpy as np
 
-blank = np.zeros((500, 500), dtype='uint8')
+blank = np.zeros((500, 500, 3), dtype='uint8')
 cv.imshow('Blank', blank)
 
-img = cv.imread('Images/image_2.jpg')
-cv.imshow('Image', img)
+# Paint the image from certain color
+blank[:] = 0, 0, 255
+cv.imshow('Red', blank)
 
 cv.waitKey(0)
