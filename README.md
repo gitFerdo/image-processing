@@ -17,6 +17,7 @@
     - Draw a Line
   - Writing Text
 - Functions
-  - Converting to grayscale
+  - Converting Image to grayscale 
+  - Blur Image
 
 run python file - py <file_name.py>
