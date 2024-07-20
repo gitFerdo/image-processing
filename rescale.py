@@ -4,6 +4,7 @@ img = cv.imread('Images/image_1.jpeg')
 cv.imshow('img', img)
 
 def rescaleFrame(frame, scale=0.75):
+    # this methods are only working for Images, Videos and Live Videos
     width = int(frame.shape[1] * scale)
     height = int(frame.shape[0] * scale)
 
@@ -13,6 +14,11 @@ def rescaleFrame(frame, scale=0.75):
 
 resized_image = rescaleFrame(img)
 cv.imshow('Resize Image', resized_image)
+
+def changeRes(width, height):
+    # Only for Live videos
+    capture.set(3, width)
+    capture.set(5, height)
 
 # read videos
 capture = cv.VideoCapture('Videos/video_2.mp4')
