@@ -13,7 +13,11 @@ cv.imshow('Blank', blank)
 # cv.imshow('Red', blank)
 
 # Draw a Rectangle
-cv.rectangle(blank, (0, 0), (250, 250), (0, 255, 0), thickness=2)
+# cv.rectangle(blank, (0, 0), (250, 250), (0, 255, 0), thickness=2)
+# cv.imshow('Rectangle', blank)
+
+# Filling a Rectangle
+cv.rectangle(blank, (0, 0), (250, 250), (0, 255, 0), thickness=cv.FILLED)
 cv.imshow('Rectangle', blank)
 
 cv.waitKey(0)

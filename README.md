@@ -12,5 +12,6 @@
     - Color certain portions of the image
   - Drawing shapes
     - Draw a Rectangle
+    - Fill the rectangle
 
 run python file - py <file_name.py>
