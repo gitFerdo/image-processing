@@ -21,4 +21,9 @@ cv.imshow('Blank', blank)
 cv.rectangle(blank, (0, 0), ((blank.shape[1]//2), (blank.shape[0]//2)), (0, 255, 0), thickness=-1)
 cv.imshow('Rectangle', blank)
 
+# Draw a Circle
+# cv.circle(blank, (250, 250), 40, (255, 0, 0), thickness=3)
+cv.circle(blank, (250, 250), 40, (255, 0, 0), thickness=-1)
+cv.imshow('Circle', blank)
+
 cv.waitKey(0)
