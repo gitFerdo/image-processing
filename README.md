@@ -15,5 +15,6 @@
       - Fill the rectangle
     - Draw a Circle
     - Draw a Line
+  - Writing Text
 
 run python file - py <file_name.py>
