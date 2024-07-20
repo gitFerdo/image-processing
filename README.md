@@ -16,5 +16,7 @@
     - Draw a Circle
     - Draw a Line
   - Writing Text
+- Functions
+  - Converting to grayscale
 
 run python file - py <file_name.py>
