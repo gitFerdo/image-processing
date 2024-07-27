@@ -11,12 +11,31 @@ def translate(img, x, y):
 
     return cv.warpAffine(img, transMat, dimensions)
 
-# x --> Right & y --> Down
+## x --> Right & y --> Down
 translated = translate(img, 100, 100)
 cv.imshow('Translated1', translated)
 
-# -x --> Left & y --> Down
+## -x --> Left & y --> Down
 translated = translate(img, -100, 100)
 cv.imshow('Translated2', translated)
+
+# Rotation
+def rotate(img, angle, rotPoint=None):
+    (height, width) = img.shape[:2]
+
+    if rotPoint is None:
+        rotPoint = (width//2, height//2)
+
+    rotMat = cv.getRotationMatrix2D(rotPoint, angle, 1.0)
+    dimensions = (width, height)
+
+    return cv.warpAffine(img, rotMat, dimensions)
+
+#rotated = rotate(img, 45)
+rotated = rotate(img, -45)
+cv.imshow('Rotated', rotated)
+
+rotated_rotated = rotate(rotated, -90)
+cv.imshow('Rotated_Rotated', rotated_rotated)
 
 cv.waitKey(0)

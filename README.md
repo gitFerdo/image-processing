@@ -29,8 +29,9 @@
     -y --> Up
     x --> Right
     y --> Down
-    
+
     - x --> Right & y --> Down
     - -x --> Left & y --> Down
+  - Rotation
 
 run python file - py <file_name.py>
