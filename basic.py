@@ -20,4 +20,8 @@ cv.imshow('Edge Cascade', canny)
 dilated = cv.dilate(canny, (7, 7), iterations=3)
 cv.imshow('Dilate', dilated)
 
+# Eroding Image
+eroded = cv.erode(dilated, (7, 7), iterations=3)
+cv.imshow('Eroding', eroded)
+
 cv.waitKey(0)

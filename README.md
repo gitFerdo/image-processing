@@ -20,5 +20,6 @@
   - Converting Image to grayscale 
   - Blur Image
   - Edge Cascade in the Image
+  - Eroding Image
 
 run python file - py <file_name.py>
