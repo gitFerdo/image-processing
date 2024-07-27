@@ -22,5 +22,6 @@
   - Edge Cascade in the Image
   - Eroding Image
   - Resize Image
+  - Cropping Image
 
 run python file - py <file_name.py>
