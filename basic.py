@@ -16,4 +16,8 @@ cv.imshow('Blur', blur)
 canny = cv.Canny(blur, 125, 125)
 cv.imshow('Edge Cascade', canny)
 
+# Dilating the Image
+dilated = cv.dilate(canny, (7, 7), iterations=3)
+cv.imshow('Dilate', dilated)
+
 cv.waitKey(0)
