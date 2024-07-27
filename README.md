@@ -33,5 +33,6 @@
     - x --> Right & y --> Down
     - -x --> Left & y --> Down
   - Rotation
+  - Resize Image
 
 run python file - py <file_name.py>
