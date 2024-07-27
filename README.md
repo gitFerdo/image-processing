@@ -23,5 +23,8 @@
   - Eroding Image
   - Resize Image
   - Cropping Image
+- Image Transformation
+  - Translation
+    - x --> Right & y --> Down
 
 run python file - py <file_name.py>
