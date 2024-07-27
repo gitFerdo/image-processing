@@ -11,11 +11,12 @@ def translate(img, x, y):
 
     return cv.warpAffine(img, transMat, dimensions)
 
-# -x --> Left
-# -y --> Up
-# x --> Right
-# y --> Down
+# x --> Right & y --> Down
 translated = translate(img, 100, 100)
-cv.imshow('Translated', translated)
+cv.imshow('Translated1', translated)
+
+# -x --> Left & y --> Down
+translated = translate(img, -100, 100)
+cv.imshow('Translated2', translated)
 
 cv.waitKey(0)

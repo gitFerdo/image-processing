@@ -25,6 +25,12 @@
   - Cropping Image
 - Image Transformation
   - Translation
+    -x --> Left
+    -y --> Up
+    x --> Right
+    y --> Down
+    
     - x --> Right & y --> Down
+    - -x --> Left & y --> Down
 
 run python file - py <file_name.py>
